@@ -14,7 +14,8 @@ body {
 }
 #contain-two {
   padding: 20px;
-  background: #B0C4DE;
+  background: url('pexels-pixabay-371589.jpg');
+;
 }
 .container {
   width: 100%;
