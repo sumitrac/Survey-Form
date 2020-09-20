@@ -1,0 +1,92 @@
+<!doctype>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <title>Sign up form</title>
+      <link href="style.css" rel="stylesheet" type="text/css">
+      <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </head>
+
+  <body>
+      <div  class="container">
+        <div class="contain" id="contain-one">
+        <h1 id="title">Survey Form</h1>
+        <h2 id="description">Please share your experience</h2>
+
+      <form id="survey-form" class="contain" action="mailto:you@yourwebsite.com">
+                  <!--name-->
+        <div>
+            <label id="name-label" typfor="fname">Full Name</label>
+            <input id="name" type="text" placeholder="Full name" required="">
+        </div>
+                <!--email-->
+        <div>
+            <label id="email-label" for="email">Email</label>
+            <input id="email" type="email" placeholder="Email" required="">
+        </div>
+                <!--number-->
+        <div>
+            <label id="number-label" for="age">Age</label>
+            <input id="number" type="number" placeholder="Age" required="" min="1" max="110" >
+         </div>
+       </div>
+
+        <div class="contain" id="contain-two">
+            <h2>Answer the following questions</h2>
+
+            <!--radio-->
+          <div>
+               <h3>Have you visited any of the seven wonders of the world?</h3>
+              <label for="yes">
+                <input id="1" type="radio" value="beauty" name="wonder">Yes</label>
+              <label for="no">
+                <input id="2" type="radio" value="beauty" name="wonder">No</label>
+         </div>
+
+           <!--checkbox-->
+          <div>
+            <h3>Which one of the seven wonders of the world do you like to visit?</h3>
+              <label for="loving"><input id="loving" type="checkbox" value="beauty" name="favorite">Great Wall of China</label>
+
+              <label for="loving"><input id="loving" type="checkbox" value="beauty" name="favorite">Christ the Redeemer Statue</label>
+
+              <label for="loving"><input id="loving" type="checkbox" value="beauty" name="favorite">Machu Picchu</label>
+
+              <label for="loving"><input id="loving" type="checkbox" value="beauty" name="favorite">Chichen Itza</label>
+
+              <label for="loving"><input id="loving" type="checkbox" value="beauty" name="favorite">The Roman Colosseum</label>
+
+              <label for="loving"><input id="loving" type="checkbox" value="beauty" name="favorite">Taj Mahal</label>
+
+              <label for="loving"><input id="loving" type="checkbox" value="beauty" name="favorite">Petra</label>
+          </div>
+
+                   <!-- dropdown -->
+          <div>
+            <h3>Which of the seven wonders of the world is your favorite?</h3>
+             <select class="selection" name="survey-selection" id="dropdown">
+
+               <option disabled="" selected="" value="0">Select one</option>
+               <option value="1">Great Wall of China</option>
+               <option value="2">Christ the Redeemer Statue</option>
+               <option value="3">Machu Picchu</option>
+               <option value="4">Chichen Itza</option>
+               <option value="5">The Roman Colosseum</option>
+               <option value="6">Taj Mahal</option>
+               <option value="7">Petra</option>
+             </select>
+          </div>
+
+                  <!--textarea-->
+      <h3 id="comment-title">Please enter any comment or suggestion here.</h3>
+        <textarea name="message" rows="8" cols="40">comment or suggestion</textarea>
+        <br><br>
+          <button id="submit" type="submit">Submit</button>
+        </div>
+
+        </div>
+    </form>
+
+  </body>
+</html>
